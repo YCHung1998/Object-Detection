@@ -55,6 +55,9 @@ generate the answer in json file
 ```
 python inference.py
 ```
+
 reference
 ---
-yolov5 : https://github.com/ultralytics/yolov5
+yolov5 github : https://github.com/ultralytics/yolov5
+yolov1 paper : https://arxiv.org/pdf/1506.02640.pdf
+yolov1 paper : https://arxiv.org/pdf/1804.02767.pdf
