@@ -2,7 +2,7 @@
 DataSet
 ---
 **The Street View House Numbers** (SVHN) dataset link : http://ufldl.stanford.edu/housenumbers/  
-Data in goole drive link :　https://drive.google.com/drive/folders/1aRWnNvirWHXXXpPPfcWlHQuzGJdXagoc  
+Data in goole drive link : https://drive.google.com/drive/folders/1aRWnNvirWHXXXpPPfcWlHQuzGJdXagoc  
 
 Folder Structure  
 ---
