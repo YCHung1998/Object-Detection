@@ -5,7 +5,7 @@ import json
 import torch
 from PIL import Image
 
-sys.path.insert(0, 'yolov5')
+# sys.path.insert(0, 'yolov5')
 from utils.datasets import LoadImages
 from utils.general import non_max_suppression, scale_coords
 from models.common import DetectMultiBackend
