@@ -49,7 +49,9 @@ detection
 ```
 python detect.py --source  --weights runs/train/exp/weights/best.pt 
 ```
+
 Check the time on colab
+---
 
 generate the answer in json file
 ---
