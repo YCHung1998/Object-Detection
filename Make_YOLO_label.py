@@ -20,7 +20,7 @@ if __name__ == '__main__':
         fp = open(os.path.join(label_dir, name.replace('png', 'txt')), 'w')
         for bbox in bboxes:
             bbox = [elt.squeeze().tolist() for elt in bbox]
-            
+
             height, left, top, width, label = bbox
             label %= 10
 
@@ -35,5 +35,3 @@ if __name__ == '__main__':
 
         if i % 1000 == 0:
             print(i)
-
-        

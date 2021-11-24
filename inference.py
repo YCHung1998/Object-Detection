@@ -15,7 +15,12 @@ if torch.cuda.is_available():
 else:
     device = "cpu"
 
-weight_dir = os.path.join('yolov5', 'runs', 'train', 'exp', 'weights', 'best.pt')
+weight_dir = os.path.join('yolov5',
+                          'runs',
+                          'train',
+                          'exp',
+                          'weights',
+                          'best.pt')
 model = DetectMultiBackend(weight_dir, device=device)
 
 dataset = LoadImages(os.path.join('datasets', 'Testing', 'images'))
@@ -24,18 +29,19 @@ JSON = []
 ctr = 0
 for path, img, im0, vid_cap, s in dataset:
     # get image id
-    img_id = path.split('\\')[-1] # '100000.png'
-    img_id = int(img_id.split('.')[0]) # 100000
+    img_id = path.split('/')[-1]  # '100000.png'
+    img_id = int(img_id.split('.')[0])  # 100000
 
     # predict
     img = torch.from_numpy(img).float().to(device)
     img /= 255
     img = img.unsqueeze(0)
-    
-    pred = model(img, augment=True)
+
+    pred = model(img, augment=False)
     pred = non_max_suppression(pred)
 
-    for det in pred: # for prediction in mini-batch size
+    for det in pred:
+        # for prediction in mini-batch size
 
         if len(det):
             # (x, y, x, y, score, cls_id)
@@ -49,11 +55,11 @@ for path, img, im0, vid_cap, s in dataset:
                 xyxy = [float(c) for c in xyxy]
                 conf = float(conf)
                 cls = int(cls)
-                
+
                 x1, y1, x2, y2 = xyxy
                 w = x2 - x1
                 h = y2 - y1
-                
+
                 bbox = {'image_id': img_id,
                         'category_id': cls,
                         'score': conf,
