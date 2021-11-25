@@ -6,6 +6,7 @@ Data in goole drive link : https://drive.google.com/drive/folders/1aRWnNvirWHXXX
 
 Folder Structure  
 ---
+Please doenload the dataset yourself and excute the ```Split_Validation.py``` code to generate the below structure 
 ```
 ├──data/
     ├─ train/images
