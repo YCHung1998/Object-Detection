@@ -48,7 +48,7 @@ python train.py --img 640 --batch 16 --epochs 20 --data SVHN.yaml --weights yolo
 
 Check the time on colab
 ---
-1. open colab_inference.ipynb in colab 
+1. Click link : https://programmer.group/improvement-of-yolov5-loss-function-for-target-detection.html
 2. Switch mode to GPU 
 3. mount your drive  
 4. Ensure to create the folder DL by yourself under Colab Notebooks (eg. /Colab Notebooks/DL)
