@@ -4,6 +4,10 @@ DataSet
 **The Street View House Numbers** (SVHN) dataset link : http://ufldl.stanford.edu/housenumbers/  
 Data in goole drive link : https://drive.google.com/drive/folders/1aRWnNvirWHXXXpPPfcWlHQuzGJdXagoc  
 
+Requirement
+---
+```requirement.txt``` in yolov5 folder 
+
 Folder Structure  
 ---
 Please doenload the dataset yourself and excute the ```Split_Validation.py``` code to generate the below structure 
