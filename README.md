@@ -11,7 +11,7 @@ You can download the dataset in this link : [Here(Myself)](https://drive.google.
 
 Requirement
 ---
-```requirement.txt``` in yolov5 folder 
+```requirements.txt``` in yolov5 folder 
 
 Folder Structure  
 ---
