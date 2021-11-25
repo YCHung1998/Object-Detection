@@ -60,15 +60,19 @@ Check the time on colab
 | Including loading image | 0.04951|
 
 
-generate the answer in json file
+Generate the answer in json file
 ---
 為了使 inference.py 呈現在首頁，執行前須要先調整如下敘述。  
 Before execute the following code, please open the inference.py and uncomment 8-th row code.(Insurance your code path is coreect).
 ```
 python inference.py
 ```
+Repository
+---
 
-reference
+[ultralytics/yolov5](https://github.com/ultralytics/yolov5)
+
+Reference
 ---
 yolov5 github : https://github.com/ultralytics/yolov5  
 yolov1 paper : https://arxiv.org/pdf/1506.02640.pdf  
