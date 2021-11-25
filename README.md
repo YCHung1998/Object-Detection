@@ -42,7 +42,7 @@ Please doenload the dataset yourself and excute the ```Split_Validation.py``` co
 Training
 ---
 ```
-python train.py --img 640 --batch 16 --epochs 20 --data SVHN.yaml --weights yolov5m.pt
+python train.py --img 640 --batch 16 --epochs 20 --data SVHN.yaml --weights yolov5m.pt  
 ```
 
 
@@ -56,7 +56,7 @@ Check the time on colab
 
 | model time        | per image (sec) |
 | ------------- |:-------------:|
-| excluded loading image | 0.0488 |
+| excluded loading image | 0.04887 |
 | Including loading image | 0.04951|
 
 
@@ -72,4 +72,4 @@ reference
 ---
 yolov5 github : https://github.com/ultralytics/yolov5  
 yolov1 paper : https://arxiv.org/pdf/1506.02640.pdf  
-yolov1 paper : https://arxiv.org/pdf/1804.02767.pdf
+yolov1 paper : https://arxiv.org/pdf/1804.02767.pdf  
