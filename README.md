@@ -44,23 +44,31 @@ Training
 python train.py --img 640 --batch 16 --epochs 20 --data SVHN.yaml --weights yolov5m.pt
 ```
 
-detection
----
-```
-python detect.py --source  --weights runs/train/exp/weights/best.pt 
-```
 
 Check the time on colab
 ---
+1. open colab_inference.ipynb in colab 
+2. Switch mode to GPU 
+3. mount your drive  
+4. Ensure to create the folder DL by yourself under Colab Notebooks (eg. /Colab Notebooks/DL)
+5. Then click the bottom run all the blocks and waiting result 
+
+| model time        | per image (sec) |
+| ------------- |:-------------:|
+| excluded loading image | 0.0488 |
+| Including loading image | 0.04951|
+
 
 generate the answer in json file
 ---
+為了使 inference.py 呈現在首頁，執行前須要先調整如下敘述。  
+Before execute the following code, please open the inference.py and uncomment 8-th row code.(Insurance your code path is coreect).
 ```
 python inference.py
 ```
 
 reference
 ---
-yolov5 github : https://github.com/ultralytics/yolov5
-yolov1 paper : https://arxiv.org/pdf/1506.02640.pdf
+yolov5 github : https://github.com/ultralytics/yolov5  
+yolov1 paper : https://arxiv.org/pdf/1506.02640.pdf  
 yolov1 paper : https://arxiv.org/pdf/1804.02767.pdf
