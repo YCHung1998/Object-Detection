@@ -77,7 +77,7 @@ Check the time on colab
 Generate the answer in json file
 ---
 為了使 inference.py 呈現在首頁，執行前須要先調整如下敘述。  
-Before execute the following code, please open the inference.py and uncomment 8-th row code.(Insurance your code path is coreect).
+Before execute the following code, please open the inference.py and uncomment 8-th row code.(Insurance your code path is correct).
 ```
 python inference.py
 ```
